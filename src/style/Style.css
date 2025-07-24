@@ -1,0 +1,310 @@
+
+/* Анимация для выезжания слева */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Анимация для выезжания справа */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.main-site{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    padding: 2rem 9rem;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.text-left {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    animation: slideInFromLeft 0.8s ease-out forwards;
+
+}
+.text-right {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.wedding {
+    font-size: 8rem;
+    font-style: italic;
+    font-weight: 400;
+    font-family: serif;
+    margin: 0;
+}
+
+.russian {
+    color: #999;
+    font-style: italic;
+    font-family: serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.decor-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: -7rem auto;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.location_p{
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.name {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 400;
+    font-family: serif;
+}
+.greeting-wrapper {
+    position: relative;
+    width:  auto;
+    margin: 2rem auto 0 auto;
+}
+
+.kids-image-wrapper {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.kids-image {
+    width: 300px;
+    height: auto;
+    z-index: 0;
+}
+
+.greeting-content {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 100rem;
+    padding: 4rem;
+    max-width: 550px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.content-nostalgi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.content-nostalgi p, .text-center p {
+    font-size: 1.8rem;
+    font-family: serif;
+    margin: 0;
+}
+.greeting-content h2 {
+    font-family: serif;
+    font-style: italic;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+.ribbon{
+    display: none;
+}
+.main-location{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    background-color: white;
+    font-size: 1.6rem;
+    margin: 1rem;
+    font-family: serif ;
+    border: 1px solid black;
+    padding: 1rem 7rem;
+}
+.map-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.location-button:hover {
+    background-color: #f6f3ff;
+    color: black;
+    border: 1px dashed black;
+    transition: all 0.3s ease;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+}
+.main-container-guest{
+    display: flex;
+    flex-direction: column;
+}
+.guests-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+.decor-img-2{
+    width: 50%;
+    min-width: 15rem;
+}
+.decor-img-2 img{
+    width: 100%;
+    height: auto;
+}
+
+.guests-1{
+    font-size: 3rem;
+    font-family: serif;
+
+}
+.guests{
+    font-size: 1.6rem;
+    font-family: serif;
+}
+.guests p{
+    margin-top: 1rem;
+}
+.true{
+    max-width: 40rem;
+}
+.contarts-org{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-site {
+        padding: 4rem 2rem;
+        gap: 7rem;
+    }
+    .decor-img img {
+        max-width: 70%;
+    }
+    .main-container{
+        gap: 4rem;
+    }
+    .name {
+        font-size: 7vw;
+    }
+    .content-nostalgi p, .text-center p {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .main-site {
+        padding: 2rem 20px;
+        width: 100%;
+        gap: 2rem;
+    }
+    .main-container{
+        align-items: end;
+    }
+    .wedding{
+        font-size: 5rem;
+    }
+    .russian{
+        font-size: 2rem;
+    }
+    .decor-img{
+        align-items: end;
+        width: 100%;
+    }
+    .decor-img img {
+        max-width: 100%;
+    }
+    .main-container{
+        gap: 3rem;
+        align-items: center;
+    }
+    .name {
+        font-size: 11vw;
+    }
+    .content-nostalgi p, .text-center p {
+        font-size: 23px;
+    }
+    .greeting-content h2 {
+        font-size: 27px;
+    }
+    .greeting-content{
+        padding: 3rem 1.5rem;
+    }
+    .main-site{
+        gap: 6rem;
+    }
+    .detail{
+    }
+    .decor-img-2{
+display: none;
+    }
+    .guests-1{
+        font-size: 35px;
+    }
+    .guests{
+        font-size: 25px;
+    }
+    .true{
+        position: relative;
+    }
+    .ribbon{
+        display: flex;
+        position: absolute;
+        top: -10px;
+        left: 6px;
+        transform-origin: center top; /* Центр нижней части бантика остаётся на месте */
+        animation: swing 3s ease-in-out infinite;
+        width: 5rem;
+    }
+    .text-left, .text-right{
+        margin: 0;
+    }
+}
