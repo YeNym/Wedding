@@ -83,10 +83,16 @@
     text-align: center;
     margin-top: 2rem;
 }
+.locatiion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .location_p{
     font-size: 1.6rem;
     margin: 0.5rem;
+    text-align: center;
 }
 
 .name {
@@ -103,14 +109,14 @@
 
 .kids-image-wrapper {
     position: absolute;
-    top: -100px;
+    top: -250px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 02;
 }
 
 .kids-image {
-    width: 300px;
+    width: 500px;
     height: auto;
     z-index: 0;
 }
@@ -160,6 +166,11 @@
     font-family: serif ;
     border: 1px solid black;
     padding: 1rem 7rem;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .map-container {
     margin-top: 20px;
@@ -236,41 +247,60 @@
     .content-nostalgi p, .text-center p {
         font-size: 1.4rem;
     }
+    .greeting-content {
+        margin-top: 6rem;
+    }
+
+    .kids-image-wrapper {
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .kids-image {
+        width: 600px;
+    }
 
 }
 
 
 @media (max-width: 768px) {
     .main-site {
-        padding: 2rem 20px;
-        width: 100%;
+        padding: 10px 10px;
+        /*width: 100%;*/
         gap: 2rem;
     }
     .main-container{
-        align-items: end;
+        gap: 2rem;
+        align-items: center;
     }
     .wedding{
-        font-size: 5rem;
+        font-size: 60px;
     }
     .russian{
-        font-size: 2rem;
+        font-size: 32px;
     }
     .decor-img{
         align-items: end;
-        width: 100%;
+        max-width: 400px;
+        width: 90%;
+        margin-top: 4rem;
     }
     .decor-img img {
         max-width: 100%;
     }
-    .main-container{
-        gap: 3rem;
-        align-items: center;
-    }
+
     .name {
-        font-size: 11vw;
+        font-size: 50px;
+        margin-top: 4rem;
+    }
+
+    .greeting-content{
+        /*max-width: 250px;*/
     }
     .content-nostalgi p, .text-center p {
-        font-size: 23px;
+        font-size: 20px;
     }
     .greeting-content h2 {
         font-size: 27px;
@@ -279,9 +309,25 @@
         padding: 3rem 1.5rem;
     }
     .main-site{
-        gap: 6rem;
+        gap: 50px;
     }
-    .detail{
+
+
+    .kids-image-wrapper {
+        top: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .kids-image {
+        width: 400px;
+        height: auto;
+        z-index: 0;
+    }
+    .location_p{
+        font-size: 20px;
+        margin: 5px;
     }
     .decor-img-2{
 display: none;
@@ -294,11 +340,21 @@ display: none;
     }
     .true{
         position: relative;
+        text-align: center;
+    }
+    .greeting-wrapper {
+        margin-top: 6rem;
+    }
+    .button{
+        font-size: 20px;
+        padding: 15px 20%;
+        color: black;
+
     }
     .ribbon{
         display: flex;
         position: absolute;
-        top: -10px;
+        top: -35px;
         left: 6px;
         transform-origin: center top; /* Центр нижней части бантика остаётся на месте */
         animation: swing 3s ease-in-out infinite;

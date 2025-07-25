@@ -53,6 +53,7 @@
     font-size: 1.2rem;
     display: inline-block;
     margin-top: 0.4rem;
+    text-align: start;
 }
 
 .timeline-line {
@@ -112,4 +113,13 @@
     .timeline-wrapper{
         padding: 1rem ;
     }
+
+    .timeline-time {
+        font-size: 30px
+    }
+
+    .timeline-title {
+        font-size: 18px;
+    }
+
 }

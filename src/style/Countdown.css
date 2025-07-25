@@ -4,6 +4,7 @@
     flex-direction: column;
     font-family: serif;
     text-align: center;
+
     justify-content: center;
 }
 .heading-wrapper {
@@ -76,7 +77,6 @@
 .glass-img {
     margin-top: 2rem;
     animation: swing 3s ease-in-out infinite;
-
 }
 
 .glass-img img {
@@ -102,7 +102,10 @@
 }
 @media (max-width: 768px) {
     .main-title-timer {
-        font-size: 5rem;
+        font-size: 60px;
+    }
+    .countdown-container{
+        width: 100%;
     }
     .main-title-timer {
         line-height: 0.7;
@@ -124,10 +127,23 @@
     }
 
     .circle {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         margin: 0;
 
+    }
+    .label{
+        font-size: 13px;
+    }
+    .glass-img {
+        width: 100%;
+
+    }
+    .glass-img img {
+        width: 100%;
+    }
+    .value {
+        font-size: 25px;
     }
 }
 

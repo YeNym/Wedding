@@ -10,11 +10,17 @@ import Countdown from "./Countdown";
 import ribbon from "../img/bant.png";
 
  function FirstScreen() {
-     const [showMap, setShowMap] = useState(false);
 
      const openYandexMap = () => {
          window.open(
              `https://yandex.ru/maps/?pt=${39.619773},${47.188340}&z=17&l=map`,
+             '_blank',
+             'noopener,noreferrer'
+         );
+     };
+     const openYandexMapAksay = () => {
+         window.open(
+             `https://yandex.ru/maps/?pt=${39.873521},${47.254602}&z=17&l=map`,
              '_blank',
              'noopener,noreferrer'
          );
@@ -68,8 +74,13 @@ import ribbon from "../img/bant.png";
                         <p className="russian">*локация</p>
                     </div>
                     <div className="locatiion">
-                        <p className="location_p">Донская роща</p>
-                        <p className="location_p">Лофт-холл</p>
+
+                        <p className="location_p">Регистрация: </p>
+                        <p className="location_p">Аксай, пер. Бондарчука 18</p>
+                        <button className="button" onClick={openYandexMapAksay}>На карте</button>
+
+                        <p className="location_p">Банкет: </p>
+                        <p className="location_p">Донская роща, Лофт-холл</p>
                         <p className="location_p">Ростов-на-Дону, Кумженская улица, 2А</p>
                         <button className="button" onClick={openYandexMap}>На карте</button>
 
@@ -115,17 +126,37 @@ import ribbon from "../img/bant.png";
                     <p className="russian">*контакты</p>
                 </div>
                 <div className="text-center">
-                    <p className="guests">Жених: 8 800 555 3535</p>
-                    <button className="button">WhatsApp</button>
-                    <p className="guests">Невеста: 8 800 05 05</p>
-                    <button className="button">WhatsApp</button>
+                    <p className="guests">Жених: +7 989 500 8010</p>
+                    <button className="button">
+                        <a
+                        href="https://wa.me/79895008010"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp
+                    </a>
+                    </button>
+                    <p className="guests">Невеста: +7 950 861 4321</p>
+                    <button className="button">    <a
+                        href="https://wa.me/79508614321"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp
+                    </a>
+                    </button>
 
                     <div className="contarts-org">
-                        <p className="guests">По всем вопросам вам поможет<br/>наша свадебный организатор</p>
-                        <p className="guests">Анна: 8 800 677 67 67</p>
+                        <p className="guests">Если вы хотите подготовить нам творческий сюрприз или поздравление, обратитесь к нашему ведущему Роману</p>
+                        <p className="guests">+7 908 170 4479</p>
                     </div>
-                    <button className="button">WhatsApp</button>
-
+                    <button className="button"><a
+                        href="https://wa.me/79081704470"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp
+                    </a></button>
                 </div>
                 <div className="text-center">
                     <Countdown/>
