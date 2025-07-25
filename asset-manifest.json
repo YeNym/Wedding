@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.ba8b6599.css",
-    "main.js": "/wedding/static/js/main.56670e95.js",
-    "static/js/453.b0928d06.chunk.js": "/wedding/static/js/453.b0928d06.chunk.js",
-    "static/media/img.png": "/wedding/static/media/img.48b1a56ca6f97a29dd46.png",
-    "static/media/first.png": "/wedding/static/media/first.efd1dec1f7d197a06f2e.png",
-    "static/media/bant.png": "/wedding/static/media/bant.67ee5cd2e4918b59d2c7.png",
-    "static/media/second.png": "/wedding/static/media/second.8866cd236321bb997a2d.png",
-    "static/media/bow.png": "/wedding/static/media/bow.933f2dffe2bee68352e3.png",
-    "static/media/third.png": "/wedding/static/media/third.dbc5c769d1b7834d7279.png",
-    "static/media/logo.svg": "/wedding/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/wedding/index.html",
-    "main.ba8b6599.css.map": "/wedding/static/css/main.ba8b6599.css.map",
-    "main.56670e95.js.map": "/wedding/static/js/main.56670e95.js.map",
-    "453.b0928d06.chunk.js.map": "/wedding/static/js/453.b0928d06.chunk.js.map"
+    "main.css": "/Wedding/static/css/main.ba8b6599.css",
+    "main.js": "/Wedding/static/js/main.a454e22d.js",
+    "static/js/453.b0928d06.chunk.js": "/Wedding/static/js/453.b0928d06.chunk.js",
+    "static/media/img.png": "/Wedding/static/media/img.48b1a56ca6f97a29dd46.png",
+    "static/media/first.png": "/Wedding/static/media/first.efd1dec1f7d197a06f2e.png",
+    "static/media/bant.png": "/Wedding/static/media/bant.67ee5cd2e4918b59d2c7.png",
+    "static/media/second.png": "/Wedding/static/media/second.8866cd236321bb997a2d.png",
+    "static/media/bow.png": "/Wedding/static/media/bow.933f2dffe2bee68352e3.png",
+    "static/media/third.png": "/Wedding/static/media/third.dbc5c769d1b7834d7279.png",
+    "static/media/logo.svg": "/Wedding/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Wedding/index.html",
+    "main.ba8b6599.css.map": "/Wedding/static/css/main.ba8b6599.css.map",
+    "main.a454e22d.js.map": "/Wedding/static/js/main.a454e22d.js.map",
+    "453.b0928d06.chunk.js.map": "/Wedding/static/js/453.b0928d06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba8b6599.css",
-    "static/js/main.56670e95.js"
+    "static/js/main.a454e22d.js"
   ]
 }
