@@ -148,7 +148,7 @@ import ribbon from "../img/bant.png";
 
                     <div className="contarts-org">
                         <p className="guests">Если вы хотите подготовить нам творческий сюрприз или поздравление, обратитесь к нашему ведущему Роману</p>
-                        <p className="guests">+7 908 170 4479</p>
+                        <p className="guests">+7 908 170 4470</p>
                     </div>
                     <button className="button"><a
                         href="https://wa.me/79081704470"
