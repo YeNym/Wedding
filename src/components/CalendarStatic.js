@@ -23,10 +23,12 @@ export default function CalendarStatic() {
                 <div></div>
                 <div></div>
                 <div></div>
+                <div></div>
                 <div className="calendar-day">1</div>
                 <div className="calendar-day">2</div>
                 <div className="calendar-day">3</div>
                 <div className="calendar-day">4</div>
+
 
                 {[...Array(27)].map((_, i) => {
                     const day = i + 5;
